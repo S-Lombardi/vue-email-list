@@ -6,9 +6,23 @@
     <title>Vue Email List</title>
 </head>
 <body>
-    <h1>ei</h1>
+    <div id="app">
+
+        <h2>Email generate casualmente dall'API di Boolean</h2> <br>
+
+        <!-- <ul @keyup="generateTenRandomEmail">
+            <li  v-for="email in array_email" >{{ email }}</li>
+        </ul>  -->
+
+        <ul>
+            <li>{{random_email }}</li>
+        </ul>
+    </div>
+
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Libreria Axios  -->
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
