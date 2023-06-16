@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vue Email List</title>
+    <title>Vue Email List Bonus</title>
 </head>
 <body>
     <div id="app">
         <h2>Email generate casualmente dall'API di Boolean</h2> <br>
         <!-- Lista di email casuali -->
-        <ul>
+        <ul v-show="array_email.length ===10">
             <li v-for="email in array_email" >{{ email }}</li>
         </ul>
     </div>
